@@ -1,0 +1,72 @@
+// Navigation Styles here
+nav {
+    display: flex;
+    background: @nav-background;
+    color: @nav-text;
+    text-decoration: none;
+    align-content: baseline;
+    //.dash-border(2px; dashed; @navigation-border);
+    p {
+        .font();
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    a {
+        display: flex;
+        align-content: baseline;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: @nav-text;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        .dash-border(2px; dashed; @navigation-border);
+        align-content: baseline;
+    }
+
+    .inner-container {
+        display: flex;
+        max-width: 800px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 20px auto;
+    }
+
+    .nav-section {
+        display: flex;
+        //justify-content: space-between;
+        align-content: baseline;
+    }
+
+    .nav-section:last-child {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+    }
+
+    @media @tablet{
+        p {
+            font-size: 3.2rem;
+            font-weight: normal;
+            padding: 0px;
+        }
+        .inner-container {
+            //max-width: 96%;
+            width: 94%;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 3%;
+        }
+        .nav-section:last-child {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
