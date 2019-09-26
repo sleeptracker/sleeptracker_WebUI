@@ -1,11 +1,10 @@
-// Navigation Styles here
+// Navigation
 nav {
     display: flex;
-    background: @nav-background;
+    background-image: linear-gradient(#010413, rgba(255,0,0,0));
     color: @nav-text;
     text-decoration: none;
     align-content: baseline;
-    //.dash-border(2px; dashed; @navigation-border);
     p {
         .font();
         font-size: 4rem;
@@ -14,6 +13,7 @@ nav {
     }
 
     a {
+        .font();
         display: flex;
         align-content: baseline;
         text-decoration: none;
@@ -42,12 +42,20 @@ nav {
         display: flex;
         //justify-content: space-between;
         align-content: baseline;
+        .btn {
+                display: flex;
+                //align-items: middle;
+                padding: 5px;
+                .signup-button(#D6980A; #031D4A; 5px; 20px);
+                .font();
+            }
     }
 
     .nav-section:last-child {
         display: flex;
         width: 40%;
         justify-content: space-between;
+        align-items: center;
     }
 
     @media @tablet{

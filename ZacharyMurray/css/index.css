@@ -136,7 +136,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  background: #031D4A;
+  background-image: linear-gradient(#070C2C, #031D4A);
 }
 h1,
 h2,
@@ -144,7 +144,7 @@ h3,
 h4,
 h5 {
   color: #D6980A;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Maven Pro', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -159,6 +159,7 @@ h4 {
   padding-bottom: 10px;
 }
 p {
+  font-family: 'Maven Pro', sans-serif;
   color: #D6980A;
   line-height: 1.5;
   font-size: 1.6rem;
@@ -181,18 +182,19 @@ img {
 }
 nav {
   display: flex;
-  background: #031D4A;
+  background-image: linear-gradient(#010413, rgba(255, 0, 0, 0));
   color: #D6980A;
   text-decoration: none;
   align-content: baseline;
 }
 nav p {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Maven Pro', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   padding: 0px;
 }
 nav a {
+  font-family: 'Maven Pro', sans-serif;
   display: flex;
   align-content: baseline;
   text-decoration: none;
@@ -218,10 +220,23 @@ nav .nav-section {
   display: flex;
   align-content: baseline;
 }
+nav .nav-section .btn {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  height: 20px;
+  background-color: #D6980A;
+  color: #031D4A;
+  border-radius: 5px;
+  font-family: 'Maven Pro', sans-serif;
+}
 nav .nav-section:last-child {
   display: flex;
   width: 40%;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 500px) {
   nav p {
@@ -243,7 +258,6 @@ nav .nav-section:last-child {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
   background: #FFEBCD;
   background: #031D4A;
   color: #D6980A;
@@ -253,6 +267,11 @@ nav .nav-section:last-child {
   color: #D6980A;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  background-image: radial-gradient(#031D4A, rgba(255, 0, 0, 0));
+  padding: 1%;
+  border: 2px #D6980A solid;
 }
 .home .content-section {
   margin: 30px 0;
@@ -294,7 +313,6 @@ nav .nav-section:last-child {
 }
 .home .top {
   margin: 0px 0px 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .home .top .text-content {
   width: 100%;
@@ -307,11 +325,10 @@ nav .nav-section:last-child {
   margin: 0px 0px 20px;
 }
 .home .top .img-content img {
-  border-radius: 0px;
+  border-radius: 5px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -327,7 +344,7 @@ nav .nav-section:last-child {
   }
 }
 .home .content-destination {
-  width: 75%;
+  width: 100%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
@@ -340,7 +357,6 @@ nav .nav-section:last-child {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -368,4 +384,7 @@ nav .nav-section:last-child {
     flex-direction: column;
     align-items: center;
   }
+}
+.about-us {
+  flex-direction: wrap;
 }

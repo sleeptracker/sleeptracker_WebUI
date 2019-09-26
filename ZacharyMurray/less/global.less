@@ -1,46 +1,50 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
-  background: #031D4A;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#070C2C, #031D4A);
+    //background: #031D4A;
 }
 
 h1, h2, h3, h4, h5 {
     color: @nav-text;
-  font-family: 'Indie Flower', cursive;
+    //font-family: 'Poppins', sans-serif;
+    //font-family: 'Abel', sans-serif;
+    .font()
 }
 
 h1 {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 h2 {
     color: @nav-text;
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+    font-size: 3.2rem;
+    padding-bottom: 10px;
 }
 
 h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
 }
 
 p {
+    .font();
     color: @nav-text;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
